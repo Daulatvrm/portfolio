@@ -1,0 +1,2778 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- =====================================================
+         BASIC SEO
+    ====================================================== -->
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color"
+          content="#851b18">
+
+    <title>
+        Daulat Bairwa | Full Stack Web Developer
+    </title>
+
+    <meta name="description"
+          content="Daulat Bairwa is a Full Stack Web Developer specializing in PHP, MySQL, JavaScript, Bootstrap, Android applications, business software, SEO and secure web development.">
+
+    <meta name="keywords"
+          content="Daulat Bairwa, Full Stack Developer, Web Developer, PHP Developer, MySQL Developer, Android Developer, Software Engineer, Kota Web Developer">
+
+    <meta name="author"
+          content="Daulat Bairwa">
+
+    <meta name="robots"
+          content="index, follow">
+
+    <meta name="referrer"
+          content="strict-origin-when-cross-origin">
+
+    <link rel="canonical"
+          href="https://YOUR_USERNAME.github.io/">
+
+    <!-- =====================================================
+         OPEN GRAPH
+    ====================================================== -->
+
+    <meta property="og:type"
+          content="website">
+
+    <meta property="og:title"
+          content="Daulat Bairwa | Full Stack Web Developer">
+
+    <meta property="og:description"
+          content="Professional portfolio of Daulat Bairwa, Full Stack Web Developer and Software Engineer.">
+
+    <meta property="og:url"
+          content="https://YOUR_USERNAME.github.io/">
+
+    <meta property="og:site_name"
+          content="Daulat Bairwa Portfolio">
+
+    <!-- =====================================================
+         FAVICON
+    ====================================================== -->
+
+    <link rel="icon"
+          href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23851b18'/%3E%3Ctext x='50' y='66' font-size='48' text-anchor='middle' fill='white' font-family='Arial'%3EDB%3C/text%3E%3C/svg%3E">
+
+    <!-- =====================================================
+         EXTERNAL CSS
+    ====================================================== -->
+
+    <link rel="preconnect"
+          href="https://cdn.jsdelivr.net">
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+          crossorigin="anonymous">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+          rel="stylesheet">
+
+    <!-- =====================================================
+         STRUCTURED DATA
+    ====================================================== -->
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Daulat Bairwa",
+        "jobTitle": "Full Stack Web Developer",
+        "description": "Full Stack Web Developer and Software Engineer specializing in web applications, APIs, databases, Android applications and SEO.",
+        "url": "https://YOUR_USERNAME.github.io/",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Kota",
+            "addressRegion": "Rajasthan",
+            "addressCountry": "IN"
+        },
+        "knowsAbout": [
+            "PHP",
+            "MySQL",
+            "JavaScript",
+            "Bootstrap",
+            "Android Development",
+            "REST API",
+            "SEO",
+            "Web Security"
+        ],
+        "sameAs": [
+            "https://github.com/YOUR_USERNAME",
+            "https://www.linkedin.com/in/YOUR_USERNAME/"
+        ]
+    }
+    </script>
+
+    <style>
+        /* =====================================================
+           DESIGN SYSTEM
+        ====================================================== */
+
+        :root {
+            --primary: #851b18;
+            --primary-dark: #651311;
+            --primary-light: #fff1f0;
+            --text-dark: #202124;
+            --text-muted: #6b7280;
+            --white: #ffffff;
+            --light-bg: #f8f9fa;
+            --border: #e8e8e8;
+            --shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 90px;
+        }
+
+        body {
+            font-family: "Inter", sans-serif;
+            color: var(--text-dark);
+            background: var(--white);
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+
+        body.menu-open {
+            overflow: hidden;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        button,
+        a {
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        :focus-visible {
+            outline: 3px solid rgba(133, 27, 24, 0.45);
+            outline-offset: 4px;
+        }
+
+        .section-padding {
+            padding: 100px 0;
+        }
+
+        .section-label {
+            color: var(--primary);
+            font-size: 13px;
+            font-weight: 800;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+        }
+
+        .section-title {
+            font-size: clamp(30px, 4vw, 42px);
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 18px;
+        }
+
+        .section-subtitle {
+            max-width: 680px;
+            color: var(--text-muted);
+            margin: 0 auto 50px;
+        }
+
+        .text-primary-custom {
+            color: var(--primary) !important;
+        }
+
+        .btn-primary-custom {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            background: var(--primary);
+            border: 2px solid var(--primary);
+            color: var(--white);
+            padding: 13px 25px;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 700;
+            transition: var(--transition);
+        }
+
+        .btn-primary-custom:hover {
+            background: var(--primary-dark);
+            border-color: var(--primary-dark);
+            color: var(--white);
+            transform: translateY(-3px);
+        }
+
+        .btn-outline-custom {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            background: transparent;
+            border: 2px solid var(--primary);
+            color: var(--primary);
+            padding: 13px 25px;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 700;
+            transition: var(--transition);
+        }
+
+        .btn-outline-custom:hover {
+            background: var(--primary);
+            color: var(--white);
+            transform: translateY(-3px);
+        }
+
+        /* =====================================================
+           NAVBAR
+        ====================================================== */
+
+        .navbar {
+            background: rgba(255, 255, 255, 0.96);
+            backdrop-filter: blur(14px);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+            padding: 16px 0;
+            transition: var(--transition);
+        }
+
+        .navbar.scrolled {
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+        }
+
+        .navbar-brand {
+            color: var(--primary);
+            font-size: 24px;
+            font-weight: 800;
+        }
+
+        .navbar-brand span {
+            color: var(--text-dark);
+        }
+
+        .navbar-brand:hover {
+            color: var(--primary);
+        }
+
+        .navbar-toggler {
+            border: 0;
+            font-size: 25px;
+            color: var(--primary);
+        }
+
+        .navbar-toggler:focus {
+            box-shadow: none;
+        }
+
+        .navbar-nav .nav-link {
+            color: var(--text-dark);
+            font-size: 14px;
+            font-weight: 600;
+            margin: 0 7px;
+            position: relative;
+            transition: var(--transition);
+        }
+
+        .navbar-nav .nav-link:hover,
+        .navbar-nav .nav-link.active {
+            color: var(--primary);
+        }
+
+        .navbar-nav .nav-link::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 0;
+            height: 2px;
+            background: var(--primary);
+            transition: var(--transition);
+        }
+
+        .navbar-nav .nav-link:hover::after,
+        .navbar-nav .nav-link.active::after {
+            width: 100%;
+        }
+
+        /* =====================================================
+           HERO
+        ====================================================== */
+
+        .hero-section {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding: 150px 0 100px;
+            background:
+                radial-gradient(
+                    circle at top right,
+                    #fff0ef 0%,
+                    transparent 36%
+                ),
+                linear-gradient(
+                    135deg,
+                    #ffffff 0%,
+                    #fffafa 100%
+                );
+        }
+
+        .hero-label {
+            color: var(--primary);
+            font-size: 14px;
+            font-weight: 800;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+        }
+
+        .hero-title {
+            font-size: clamp(40px, 6vw, 68px);
+            line-height: 1.12;
+            font-weight: 800;
+            margin-bottom: 20px;
+        }
+
+        .hero-title span {
+            color: var(--primary);
+        }
+
+        .hero-role {
+            font-size: clamp(20px, 3vw, 28px);
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .hero-description {
+            max-width: 620px;
+            color: var(--text-muted);
+            font-size: 17px;
+            margin-bottom: 30px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 14px;
+        }
+
+        .social-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 35px;
+        }
+
+        .social-links a {
+            width: 43px;
+            height: 43px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary);
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: 50%;
+            transition: var(--transition);
+        }
+
+        .social-links a:hover {
+            color: var(--white);
+            background: var(--primary);
+            transform: translateY(-4px);
+        }
+
+        .hero-visual {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .profile-circle {
+            width: 360px;
+            height: 360px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--primary-light);
+            border: 12px solid var(--white);
+            border-radius: 50%;
+            box-shadow: var(--shadow);
+            overflow: hidden;
+        }
+
+        .profile-initials {
+            color: var(--primary);
+            font-size: 115px;
+            font-weight: 800;
+        }
+
+        .profile-circle img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .floating-card {
+            position: absolute;
+            left: 0;
+            bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 16px 20px;
+            background: var(--white);
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+        }
+
+        .floating-card i {
+            color: var(--primary);
+            font-size: 28px;
+        }
+
+        .floating-card strong {
+            display: block;
+            font-size: 14px;
+        }
+
+        .floating-card small {
+            display: block;
+            color: var(--text-muted);
+            font-size: 12px;
+        }
+
+        /* =====================================================
+           ABOUT
+        ====================================================== */
+
+        .about-section {
+            background: var(--light-bg);
+        }
+
+        .info-card {
+            height: 100%;
+            padding: 35px;
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            transition: var(--transition);
+        }
+
+        .info-card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow);
+        }
+
+        .info-card h3 {
+            font-size: 25px;
+            font-weight: 800;
+            margin-bottom: 18px;
+        }
+
+        .info-card p {
+            color: var(--text-muted);
+        }
+
+        .check-list {
+            padding: 0;
+            margin: 25px 0 0;
+            list-style: none;
+        }
+
+        .check-list li {
+            color: var(--text-muted);
+            margin-bottom: 12px;
+        }
+
+        .check-list i {
+            color: var(--primary);
+            margin-right: 8px;
+        }
+
+        /* =====================================================
+           SKILLS
+        ====================================================== */
+
+        .skill-card {
+            height: 100%;
+            padding: 28px;
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            transition: var(--transition);
+        }
+
+        .skill-card:hover {
+            transform: translateY(-7px);
+            border-color: var(--primary);
+            box-shadow: var(--shadow);
+        }
+
+        .skill-icon {
+            width: 55px;
+            height: 55px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            border-radius: 12px;
+            color: var(--primary);
+            background: var(--primary-light);
+            font-size: 27px;
+        }
+
+        .skill-card h5 {
+            font-weight: 800;
+            margin-bottom: 10px;
+        }
+
+        .skill-card p {
+            color: var(--text-muted);
+            font-size: 14px;
+            margin-bottom: 0;
+        }
+
+        /* =====================================================
+           SERVICES
+        ====================================================== */
+
+        .services-section {
+            background: var(--light-bg);
+        }
+
+        .service-card {
+            height: 100%;
+            padding: 35px;
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            transition: var(--transition);
+        }
+
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow);
+        }
+
+        .service-icon {
+            color: var(--primary);
+            font-size: 42px;
+            margin-bottom: 20px;
+        }
+
+        .service-card h4 {
+            font-size: 21px;
+            font-weight: 800;
+            margin-bottom: 14px;
+        }
+
+        .service-card p {
+            color: var(--text-muted);
+            font-size: 14px;
+            margin-bottom: 0;
+        }
+
+        /* =====================================================
+           PROJECTS
+        ====================================================== */
+
+        .project-card {
+            height: 100%;
+            overflow: hidden;
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            transition: var(--transition);
+        }
+
+        .project-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow);
+        }
+
+        .project-image {
+            height: 210px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            background: linear-gradient(
+                135deg,
+                var(--primary),
+                #b94a45
+            );
+            font-size: 70px;
+        }
+
+        .project-content {
+            padding: 28px;
+        }
+
+        .project-content h4 {
+            font-size: 21px;
+            font-weight: 800;
+            margin-bottom: 12px;
+        }
+
+        .project-content p {
+            color: var(--text-muted);
+            font-size: 14px;
+        }
+
+        .project-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 7px;
+            margin: 18px 0;
+        }
+
+        .project-tags span {
+            padding: 5px 10px;
+            color: var(--primary);
+            background: var(--primary-light);
+            border-radius: 5px;
+            font-size: 11px;
+            font-weight: 800;
+        }
+
+        .project-link {
+            color: var(--primary);
+            font-size: 14px;
+            font-weight: 800;
+        }
+
+        .project-link:hover {
+            color: var(--primary-dark);
+        }
+
+        /* =====================================================
+           JOURNEY
+        ====================================================== */
+
+        .timeline {
+            border-left: 3px solid var(--primary);
+            padding-left: 30px;
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 35px;
+        }
+
+        .timeline-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .timeline-item::before {
+            content: "";
+            position: absolute;
+            left: -41px;
+            top: 5px;
+            width: 18px;
+            height: 18px;
+            background: var(--primary);
+            border: 4px solid var(--primary-light);
+            border-radius: 50%;
+        }
+
+        .timeline-date {
+            color: var(--primary);
+            font-size: 13px;
+            font-weight: 800;
+            margin-bottom: 5px;
+        }
+
+        .timeline-item h5 {
+            font-weight: 800;
+            margin-bottom: 8px;
+        }
+
+        .timeline-item p {
+            color: var(--text-muted);
+            font-size: 14px;
+        }
+
+        /* =====================================================
+           CTA
+        ====================================================== */
+
+        .cta-section {
+            color: var(--white);
+            background: var(--primary);
+        }
+
+        .cta-section h2 {
+            font-size: clamp(30px, 4vw, 44px);
+            font-weight: 800;
+        }
+
+        .cta-section p {
+            max-width: 700px;
+            margin: 15px auto 30px;
+            opacity: 0.88;
+        }
+
+        .btn-light-custom {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 13px 25px;
+            color: var(--primary);
+            background: var(--white);
+            border: 2px solid var(--white);
+            border-radius: 8px;
+            font-weight: 800;
+            transition: var(--transition);
+        }
+
+        .btn-light-custom:hover {
+            color: var(--primary-dark);
+            background: #f4f4f4;
+            transform: translateY(-3px);
+        }
+
+        /* =====================================================
+           CONTACT
+        ====================================================== */
+
+        .contact-section {
+            background: var(--light-bg);
+        }
+
+        .contact-card {
+            height: 100%;
+            padding: 35px;
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+        }
+
+        .contact-card h3 {
+            font-weight: 800;
+            margin-bottom: 25px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 14px;
+            margin-bottom: 25px;
+        }
+
+        .contact-item i {
+            width: 45px;
+            height: 45px;
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary);
+            background: var(--primary-light);
+            border-radius: 10px;
+            font-size: 21px;
+        }
+
+        .contact-item h6 {
+            font-weight: 800;
+            margin-bottom: 3px;
+        }
+
+        .contact-item p,
+        .contact-item a {
+            color: var(--text-muted);
+            font-size: 14px;
+            margin-bottom: 0;
+            overflow-wrap: anywhere;
+        }
+
+        .form-label {
+            font-size: 14px;
+            font-weight: 700;
+        }
+
+        .form-control {
+            min-height: 48px;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 12px 14px;
+            font-size: 14px;
+        }
+
+        .form-control:focus {
+            border-color: var(--primary);
+            box-shadow: 0 0 0 0.2rem rgba(133, 27, 24, 0.12);
+        }
+
+        textarea.form-control {
+            min-height: 145px;
+            resize: vertical;
+        }
+
+        .form-status {
+            display: none;
+            margin-top: 15px;
+            padding: 12px 15px;
+            border-radius: 8px;
+            font-size: 13px;
+            color: #155724;
+            background: #d4edda;
+        }
+
+        /* =====================================================
+           FOOTER
+        ====================================================== */
+
+        footer {
+            padding: 30px 0;
+            color: var(--white);
+            background: #171717;
+        }
+
+        footer p {
+            color: #bdbdbd;
+            font-size: 13px;
+            margin-bottom: 0;
+        }
+
+        footer a {
+            color: var(--white);
+            font-size: 13px;
+            margin-left: 18px;
+            transition: var(--transition);
+        }
+
+        footer a:hover {
+            color: #ffaaa5;
+        }
+
+        /* =====================================================
+           REVEAL ANIMATION
+        ====================================================== */
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition:
+                opacity 0.7s ease,
+                transform 0.7s ease;
+        }
+
+        .reveal.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* =====================================================
+           BACK TO TOP
+        ====================================================== */
+
+        .back-to-top {
+            position: fixed;
+            right: 22px;
+            bottom: 22px;
+            z-index: 1000;
+            width: 46px;
+            height: 46px;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            border: 0;
+            border-radius: 50%;
+            color: var(--white);
+            background: var(--primary);
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+
+        .back-to-top:hover {
+            background: var(--primary-dark);
+            transform: translateY(-3px);
+        }
+
+        /* =====================================================
+           RESPONSIVE
+        ====================================================== */
+
+        @media (max-width: 991px) {
+            .hero-section {
+                padding-top: 130px;
+            }
+
+            .hero-visual {
+                margin-top: 60px;
+            }
+
+            .profile-circle {
+                width: 300px;
+                height: 300px;
+            }
+
+            .profile-initials {
+                font-size: 95px;
+            }
+
+            .floating-card {
+                left: 5%;
+            }
+
+            .navbar-nav {
+                padding-top: 15px;
+            }
+
+            .navbar-nav .nav-link {
+                margin: 7px 0;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .section-padding {
+                padding: 70px 0;
+            }
+
+            .hero-title {
+                font-size: 42px;
+            }
+
+            .hero-description {
+                font-size: 15px;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .hero-buttons a {
+                width: 100%;
+            }
+
+            .profile-circle {
+                width: 260px;
+                height: 260px;
+            }
+
+            .profile-initials {
+                font-size: 80px;
+            }
+
+            .floating-card {
+                left: 0;
+                bottom: -10px;
+                padding: 12px 15px;
+            }
+
+            .info-card,
+            .service-card,
+            .contact-card {
+                padding: 25px;
+            }
+
+            footer .text-md-end {
+                text-align: left !important;
+                margin-top: 15px;
+            }
+
+            footer a {
+                margin-left: 0;
+                margin-right: 15px;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            html {
+                scroll-behavior: auto;
+            }
+
+            *,
+            *::before,
+            *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+
+            .reveal {
+                opacity: 1;
+                transform: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- =====================================================
+         NAVBAR
+    ====================================================== -->
+
+    <nav class="navbar navbar-expand-lg fixed-top"
+         id="mainNavbar"
+         aria-label="Main navigation">
+
+        <div class="container">
+
+            <a class="navbar-brand"
+               href="#home"
+               aria-label="Daulat Bairwa home">
+
+                Daulat <span>Bairwa</span>
+
+            </a>
+
+            <button class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarMenu"
+                    aria-controls="navbarMenu"
+                    aria-expanded="false"
+                    aria-label="Open navigation menu">
+
+                <i class="bi bi-list"></i>
+
+            </button>
+
+            <div class="collapse navbar-collapse"
+                 id="navbarMenu">
+
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+
+                    <li class="nav-item">
+                        <a class="nav-link active"
+                           href="#home">
+                            Home
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link"
+                           href="#about">
+                            About
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link"
+                           href="#skills">
+                            Skills
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link"
+                           href="#services">
+                            Services
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link"
+                           href="#projects">
+                            Projects
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link"
+                           href="#contact">
+                            Contact
+                        </a>
+                    </li>
+
+                    <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+                        <a href="#contact"
+                           class="btn-primary-custom">
+
+                            Let's Talk
+                            <i class="bi bi-arrow-up-right"></i>
+
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- =====================================================
+         HERO
+    ====================================================== -->
+
+    <main>
+
+        <section id="home"
+                 class="hero-section">
+
+            <div class="container">
+
+                <div class="row align-items-center">
+
+                    <div class="col-lg-7 reveal">
+
+                        <div class="hero-label">
+                            Hello, I'm
+                        </div>
+
+                        <h1 class="hero-title">
+                            Daulat <span>Bairwa</span>
+                        </h1>
+
+                        <h2 class="hero-role">
+                            Full Stack Web Developer
+                        </h2>
+
+                        <p class="hero-description">
+                            I create modern, secure, responsive and scalable
+                            websites, business software, admin dashboards,
+                            REST APIs and Android applications.
+                        </p>
+
+                        <div class="hero-buttons">
+
+                            <a href="#projects"
+                               class="btn-primary-custom">
+
+                                View My Work
+                                <i class="bi bi-arrow-up-right"></i>
+
+                            </a>
+
+                            <a href="#contact"
+                               class="btn-outline-custom">
+
+                                Contact Me
+                                <i class="bi bi-envelope"></i>
+
+                            </a>
+
+                        </div>
+
+                        <div class="social-links">
+
+                            <a href="https://github.com/YOUR_USERNAME"
+                               target="_blank"
+                               rel="noopener noreferrer"
+                               aria-label="GitHub profile">
+
+                                <i class="bi bi-github"></i>
+
+                            </a>
+
+                            <a href="https://www.linkedin.com/in/YOUR_USERNAME/"
+                               target="_blank"
+                               rel="noopener noreferrer"
+                               aria-label="LinkedIn profile">
+
+                                <i class="bi bi-linkedin"></i>
+
+                            </a>
+
+                            <a href="mailto:your-email@example.com"
+                               aria-label="Send email">
+
+                                <i class="bi bi-envelope"></i>
+
+                            </a>
+
+                            <a href="https://wa.me/91XXXXXXXXXX"
+                               target="_blank"
+                               rel="noopener noreferrer"
+                               aria-label="WhatsApp">
+
+                                <i class="bi bi-whatsapp"></i>
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-5 reveal">
+
+                        <div class="hero-visual">
+
+                            <div class="profile-circle"
+                                 aria-label="Daulat Bairwa profile">
+
+                                <!-- Replace DB with your image:
+                                <img src="profile.jpg"
+                                     alt="Daulat Bairwa">
+                                -->
+
+                                <div class="profile-initials">
+                                    DB
+                                </div>
+
+                            </div>
+
+                            <div class="floating-card">
+
+                                <i class="bi bi-code-slash"></i>
+
+                                <div>
+                                    <strong>Clean Code</strong>
+                                    <small>Modern Digital Solutions</small>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- =====================================================
+             ABOUT
+        ====================================================== -->
+
+        <section id="about"
+                 class="section-padding about-section">
+
+            <div class="container">
+
+                <div class="text-center reveal">
+
+                    <div class="section-label">
+                        About Me
+                    </div>
+
+                    <h2 class="section-title">
+                        Turning Ideas Into Digital Solutions
+                    </h2>
+
+                    <p class="section-subtitle">
+                        I focus on developing useful, secure, fast and
+                        user-friendly digital products.
+                    </p>
+
+                </div>
+
+                <div class="row g-4">
+
+                    <div class="col-lg-6 reveal">
+
+                        <div class="info-card">
+
+                            <h3>
+                                Who I Am
+                            </h3>
+
+                            <p>
+                                I am Daulat Bairwa, a Full Stack Web Developer
+                                and Software Engineer. I work on websites,
+                                web applications, business management systems,
+                                admin dashboards, APIs and Android applications.
+                            </p>
+
+                            <p>
+                                My development approach focuses on clean code,
+                                responsive design, database optimization,
+                                security, SEO and reliable software solutions.
+                            </p>
+
+                            <ul class="check-list">
+
+                                <li>
+                                    <i class="bi bi-check-circle-fill"></i>
+                                    Responsive Website Development
+                                </li>
+
+                                <li>
+                                    <i class="bi bi-check-circle-fill"></i>
+                                    Secure Backend Development
+                                </li>
+
+                                <li>
+                                    <i class="bi bi-check-circle-fill"></i>
+                                    Business Software Development
+                                </li>
+
+                                <li>
+                                    <i class="bi bi-check-circle-fill"></i>
+                                    SEO-Friendly Website Development
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-6 reveal">
+
+                        <div class="info-card">
+
+                            <h3>
+                                Development Focus
+                            </h3>
+
+                            <p>
+                                From frontend design to backend APIs,
+                                database integration, security and deployment,
+                                I work on complete digital solutions.
+                            </p>
+
+                            <div class="row g-4 mt-2">
+
+                                <div class="col-6">
+                                    <h2 class="text-primary-custom fw-bold">
+                                        Web
+                                    </h2>
+                                    <p>Web Applications</p>
+                                </div>
+
+                                <div class="col-6">
+                                    <h2 class="text-primary-custom fw-bold">
+                                        API
+                                    </h2>
+                                    <p>Backend APIs</p>
+                                </div>
+
+                                <div class="col-6">
+                                    <h2 class="text-primary-custom fw-bold">
+                                        SEO
+                                    </h2>
+                                    <p>Search Optimization</p>
+                                </div>
+
+                                <div class="col-6">
+                                    <h2 class="text-primary-custom fw-bold">
+                                        App
+                                    </h2>
+                                    <p>Android Applications</p>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- =====================================================
+             SKILLS
+        ====================================================== -->
+
+        <section id="skills"
+                 class="section-padding">
+
+            <div class="container">
+
+                <div class="text-center reveal">
+
+                    <div class="section-label">
+                        My Skills
+                    </div>
+
+                    <h2 class="section-title">
+                        Technologies I Work With
+                    </h2>
+
+                    <p class="section-subtitle">
+                        A practical technology stack for complete
+                        digital development.
+                    </p>
+
+                </div>
+
+                <div class="row g-4">
+
+                    <div class="col-md-6 col-lg-3 reveal">
+                        <div class="skill-card">
+
+                            <div class="skill-icon">
+                                <i class="bi bi-code-slash"></i>
+                            </div>
+
+                            <h5>Frontend</h5>
+
+                            <p>
+                                HTML5, CSS3, Bootstrap 5, JavaScript,
+                                jQuery, AJAX and responsive UI.
+                            </p>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3 reveal">
+                        <div class="skill-card">
+
+                            <div class="skill-icon">
+                                <i class="bi bi-server"></i>
+                            </div>
+
+                            <h5>Backend</h5>
+
+                            <p>
+                                PHP, PDO, REST APIs, authentication,
+                                role-based access and secure coding.
+                            </p>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3 reveal">
+                        <div class="skill-card">
+
+                            <div class="skill-icon">
+                                <i class="bi bi-database"></i>
+                            </div>
+
+                            <h5>Database</h5>
+
+                            <p>
+                                MySQL, Microsoft SQL Server, database design,
+                                optimization and query performance.
+                            </p>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3 reveal">
+                        <div class="skill-card">
+
+                            <div class="skill-icon">
+                                <i class="bi bi-phone"></i>
+                            </div>
+
+                            <h5>Mobile Apps</h5>
+
+                            <p>
+                                Android Studio, Java, Retrofit, WebView,
+                                OTP and API integration.
+                            </p>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3 reveal">
+                        <div class="skill-card">
+
+                            <div class="skill-icon">
+                                <i class="bi bi-shield-check"></i>
+                            </div>
+
+                            <h5>Security</h5>
+
+                            <p>
+                                CSRF protection, prepared statements,
+                                validation, hashing and HTTPS.
+                            </p>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3 reveal">
+                        <div class="skill-card">
+
+                            <div class="skill-icon">
+                                <i class="bi bi-search"></i>
+                            </div>
+
+                            <h5>SEO</h5>
+
+                            <p>
+                                Technical SEO, meta tags, sitemap,
+                                robots.txt and schema markup.
+                            </p>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3 reveal">
+                        <div class="skill-card">
+
+                            <div class="skill-icon">
+                                <i class="bi bi-cloud"></i>
+                            </div>
+
+                            <h5>Deployment</h5>
+
+                            <p>
+                                GitHub Pages, Hostinger, cPanel, Apache,
+                                Nginx, SSL and server configuration.
+                            </p>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3 reveal">
+                        <div class="skill-card">
+
+                            <div class="skill-icon">
+                                <i class="bi bi-graph-up-arrow"></i>
+                            </div>
+
+                            <h5>Digital Marketing</h5>
+
+                            <p>
+                                SEO, social media marketing, Google campaigns,
+                                Meta campaigns and branding.
+                            </p>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- =====================================================
+             SERVICES
+        ====================================================== -->
+
+        <section id="services"
+                 class="section-padding services-section">
+
+            <div class="container">
+
+                <div class="text-center reveal">
+
+                    <div class="section-label">
+                        My Services
+                    </div>
+
+                    <h2 class="section-title">
+                        What I Can Do For You
+                    </h2>
+
+                    <p class="section-subtitle">
+                        Complete digital development services for businesses,
+                        institutions, startups and individuals.
+                    </p>
+
+                </div>
+
+                <div class="row g-4">
+
+                    <div class="col-md-6 col-lg-4 reveal">
+                        <div class="service-card">
+
+                            <div class="service-icon">
+                                <i class="bi bi-window-stack"></i>
+                            </div>
+
+                            <h4>Web Development</h4>
+
+                            <p>
+                                Business websites, dynamic websites,
+                                portals, landing pages and custom web applications.
+                            </p>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 reveal">
+                        <div class="service-card">
+
+                            <div class="service-icon">
+                                <i class="bi bi-phone"></i>
+                            </div>
+
+                            <h4>Mobile App Development</h4>
+
+                            <p>
+                                Android applications with login, OTP,
+                                API integration, camera and document upload.
+                            </p>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 reveal">
+                        <div class="service-card">
+
+                            <div class="service-icon">
+                                <i class="bi bi-speedometer2"></i>
+                            </div>
+
+                            <h4>Admin Dashboards</h4>
+
+                            <p>
+                                Admin panels, user roles, reports,
+                                logs and business management systems.
+                            </p>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 reveal">
+                        <div class="service-card">
+
+                            <div class="service-icon">
+                                <i class="bi bi-database-check"></i>
+                            </div>
+
+                            <h4>Database Solutions</h4>
+
+                            <p>
+                                Database design, CRUD systems,
+                                query optimization and data management.
+                            </p>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 reveal">
+                        <div class="service-card">
+
+                            <div class="service-icon">
+                                <i class="bi bi-shield-lock"></i>
+                            </div>
+
+                            <h4>Web Security</h4>
+
+                            <p>
+                                Authentication, validation, prepared
+                                statements, access control and HTTPS.
+                            </p>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 reveal">
+                        <div class="service-card">
+
+                            <div class="service-icon">
+                                <i class="bi bi-megaphone"></i>
+                            </div>
+
+                            <h4>SEO & Digital Marketing</h4>
+
+                            <p>
+                                Technical SEO, social media marketing,
+                                Google campaigns, Meta campaigns and branding.
+                            </p>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- =====================================================
+             PROJECTS - FORM MITRA REMOVED
+        ====================================================== -->
+
+        <section id="projects"
+                 class="section-padding">
+
+            <div class="container">
+
+                <div class="text-center reveal">
+
+                    <div class="section-label">
+                        My Projects
+                    </div>
+
+                    <h2 class="section-title">
+                        Featured Work
+                    </h2>
+
+                    <p class="section-subtitle">
+                        Selected software and digital solutions developed
+                        using modern technologies.
+                    </p>
+
+                </div>
+
+                <div class="row g-4">
+
+                    <!-- PROJECT 1 -->
+
+                    <div class="col-md-6 col-lg-4 reveal">
+
+                        <article class="project-card">
+
+                            <div class="project-image">
+                                <i class="bi bi-person-badge"></i>
+                            </div>
+
+                            <div class="project-content">
+
+                                <h4>
+                                    Enquiry Management App
+                                </h4>
+
+                                <p>
+                                    Android and PHP-based enquiry system
+                                    with receptionist login, visitor OTP,
+                                    photo capture, document upload and
+                                    admin dashboard.
+                                </p>
+
+                                <div class="project-tags">
+                                    <span>Android Java</span>
+                                    <span>PHP</span>
+                                    <span>MySQL</span>
+                                    <span>Retrofit</span>
+                                </div>
+
+                                <a href="#contact"
+                                   class="project-link">
+
+                                    Discuss Project
+                                    <i class="bi bi-arrow-up-right"></i>
+
+                                </a>
+
+                            </div>
+
+                        </article>
+
+                    </div>
+
+                    <!-- PROJECT 2 -->
+
+                    <div class="col-md-6 col-lg-4 reveal">
+
+                        <article class="project-card">
+
+                            <div class="project-image">
+                                <i class="bi bi-building"></i>
+                            </div>
+
+                            <div class="project-content">
+
+                                <h4>
+                                    Business Management System
+                                </h4>
+
+                                <p>
+                                    Custom business software with dashboard,
+                                    user roles, reports, records management
+                                    and workflow automation.
+                                </p>
+
+                                <div class="project-tags">
+                                    <span>PHP</span>
+                                    <span>MySQL</span>
+                                    <span>AJAX</span>
+                                    <span>Bootstrap</span>
+                                </div>
+
+                                <a href="#contact"
+                                   class="project-link">
+
+                                    Discuss Project
+                                    <i class="bi bi-arrow-up-right"></i>
+
+                                </a>
+
+                            </div>
+
+                        </article>
+
+                    </div>
+
+                    <!-- PROJECT 3 -->
+
+                    <div class="col-md-6 col-lg-4 reveal">
+
+                        <article class="project-card">
+
+                            <div class="project-image">
+                                <i class="bi bi-ticket-perforated"></i>
+                            </div>
+
+                            <div class="project-content">
+
+                                <h4>
+                                    Entry & Out Pass System
+                                </h4>
+
+                                <p>
+                                    Visitor entry, student out pass,
+                                    OTP verification, photo capture,
+                                    approval workflow and printable slips.
+                                </p>
+
+                                <div class="project-tags">
+                                    <span>Android</span>
+                                    <span>PHP API</span>
+                                    <span>MySQL</span>
+                                    <span>OTP</span>
+                                </div>
+
+                                <a href="#contact"
+                                   class="project-link">
+
+                                    Discuss Project
+                                    <i class="bi bi-arrow-up-right"></i>
+
+                                </a>
+
+                            </div>
+
+                        </article>
+
+                    </div>
+
+                    <!-- PROJECT 4 -->
+
+                    <div class="col-md-6 col-lg-4 reveal">
+
+                        <article class="project-card">
+
+                            <div class="project-image">
+                                <i class="bi bi-shop"></i>
+                            </div>
+
+                            <div class="project-content">
+
+                                <h4>
+                                    Restaurant SaaS
+                                </h4>
+
+                                <p>
+                                    Restaurant management concept with
+                                    billing, orders, dashboard, branches,
+                                    reports and user-based access.
+                                </p>
+
+                                <div class="project-tags">
+                                    <span>SaaS</span>
+                                    <span>PHP</span>
+                                    <span>MySQL</span>
+                                    <span>Dashboard</span>
+                                </div>
+
+                                <a href="#contact"
+                                   class="project-link">
+
+                                    Discuss Project
+                                    <i class="bi bi-arrow-up-right"></i>
+
+                                </a>
+
+                            </div>
+
+                        </article>
+
+                    </div>
+
+                    <!-- PROJECT 5 -->
+
+                    <div class="col-md-6 col-lg-4 reveal">
+
+                        <article class="project-card">
+
+                            <div class="project-image">
+                                <i class="bi bi-megaphone"></i>
+                            </div>
+
+                            <div class="project-content">
+
+                                <h4>
+                                    Business Website & SEO
+                                </h4>
+
+                                <p>
+                                    Professional business website with
+                                    responsive layout, services, contact
+                                    section and SEO structure.
+                                </p>
+
+                                <div class="project-tags">
+                                    <span>HTML</span>
+                                    <span>CSS</span>
+                                    <span>Bootstrap</span>
+                                    <span>SEO</span>
+                                </div>
+
+                                <a href="#contact"
+                                   class="project-link">
+
+                                    Discuss Project
+                                    <i class="bi bi-arrow-up-right"></i>
+
+                                </a>
+
+                            </div>
+
+                        </article>
+
+                    </div>
+
+                    <!-- PROJECT 6 -->
+
+                    <div class="col-md-6 col-lg-4 reveal">
+
+                        <article class="project-card">
+
+                            <div class="project-image">
+                                <i class="bi bi-kanban"></i>
+                            </div>
+
+                            <div class="project-content">
+
+                                <h4>
+                                    Task Management System
+                                </h4>
+
+                                <p>
+                                    Task assignment, user-based access,
+                                    status tracking, notifications and
+                                    work-allotment workflow.
+                                </p>
+
+                                <div class="project-tags">
+                                    <span>PHP</span>
+                                    <span>MySQL</span>
+                                    <span>JavaScript</span>
+                                    <span>Dashboard</span>
+                                </div>
+
+                                <a href="#contact"
+                                   class="project-link">
+
+                                    Discuss Project
+                                    <i class="bi bi-arrow-up-right"></i>
+
+                                </a>
+
+                            </div>
+
+                        </article>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- =====================================================
+             JOURNEY
+        ====================================================== -->
+
+        <section class="section-padding about-section">
+
+            <div class="container">
+
+                <div class="text-center reveal">
+
+                    <div class="section-label">
+                        My Journey
+                    </div>
+
+                    <h2 class="section-title">
+                        Experience & Education
+                    </h2>
+
+                    <p class="section-subtitle">
+                        Update the details below with your exact company
+                        names, dates and qualifications.
+                    </p>
+
+                </div>
+
+                <div class="row g-5">
+
+                    <div class="col-lg-6 reveal">
+
+                        <h3 class="fw-bold mb-4">
+                            Experience
+                        </h3>
+
+                        <div class="timeline">
+
+                            <div class="timeline-item">
+
+                                <div class="timeline-date">
+                                    Professional Experience
+                                </div>
+
+                                <h5>
+                                    Full Stack Web Developer
+                                </h5>
+
+                                <p>
+                                    Working on custom web applications,
+                                    dashboards, APIs, databases, security
+                                    and responsive websites.
+                                </p>
+
+                            </div>
+
+                            <div class="timeline-item">
+
+                                <div class="timeline-date">
+                                    Project Development
+                                </div>
+
+                                <h5>
+                                    Software Development Projects
+                                </h5>
+
+                                <p>
+                                    Developed portals, enquiry systems,
+                                    business software, dashboards and
+                                    Android applications.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-6 reveal">
+
+                        <h3 class="fw-bold mb-4">
+                            Education
+                        </h3>
+
+                        <div class="timeline">
+
+                            <div class="timeline-item">
+
+                                <div class="timeline-date">
+                                    Qualification
+                                </div>
+
+                                <h5>
+                                    Master of Computer Applications
+                                </h5>
+
+                                <p>
+                                    Add your college name and passing year here.
+                                </p>
+
+                            </div>
+
+                            <div class="timeline-item">
+
+                                <div class="timeline-date">
+                                    Continuous Learning
+                                </div>
+
+                                <h5>
+                                    Modern Web Technologies
+                                </h5>
+
+                                <p>
+                                    Learning and working with React JS,
+                                    Node JS, cloud technologies, performance
+                                    optimization and modern architecture.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- =====================================================
+             CTA
+        ====================================================== -->
+
+        <section class="section-padding cta-section">
+
+            <div class="container text-center reveal">
+
+                <h2>
+                    Have a Project in Mind?
+                </h2>
+
+                <p>
+                    Let's build a modern, secure and scalable digital
+                    solution for your business.
+                </p>
+
+                <a href="#contact"
+                   class="btn-light-custom">
+
+                    Start a Conversation
+                    <i class="bi bi-arrow-up-right"></i>
+
+                </a>
+
+            </div>
+
+        </section>
+
+        <!-- =====================================================
+             CONTACT
+        ====================================================== -->
+
+        <section id="contact"
+                 class="section-padding contact-section">
+
+            <div class="container">
+
+                <div class="text-center reveal">
+
+                    <div class="section-label">
+                        Contact Me
+                    </div>
+
+                    <h2 class="section-title">
+                        Let's Work Together
+                    </h2>
+
+                    <p class="section-subtitle">
+                        Have a website, application or software requirement?
+                        Send me a message.
+                    </p>
+
+                </div>
+
+                <div class="row g-4">
+
+                    <div class="col-lg-5 reveal">
+
+                        <div class="contact-card">
+
+                            <h3>
+                                Contact Information
+                            </h3>
+
+                            <div class="contact-item">
+
+                                <i class="bi bi-envelope"></i>
+
+                                <div>
+
+                                    <h6>
+                                        Email
+                                    </h6>
+
+                                    <a href="mailto:your-email@example.com">
+                                        your-email@example.com
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+                            <div class="contact-item">
+
+                                <i class="bi bi-phone"></i>
+
+                                <div>
+
+                                    <h6>
+                                        Phone
+                                    </h6>
+
+                                    <a href="tel:+91XXXXXXXXXX">
+                                        +91 XXXXXXXXXX
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+                            <div class="contact-item">
+
+                                <i class="bi bi-geo-alt"></i>
+
+                                <div>
+
+                                    <h6>
+                                        Location
+                                    </h6>
+
+                                    <p>
+                                        Kota, Rajasthan, India
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                            <div class="contact-item">
+
+                                <i class="bi bi-clock"></i>
+
+                                <div>
+
+                                    <h6>
+                                        Availability
+                                    </h6>
+
+                                    <p>
+                                        Available for freelance and
+                                        project work
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                            <div class="social-links mt-4">
+
+                                <a href="https://github.com/YOUR_USERNAME"
+                                   target="_blank"
+                                   rel="noopener noreferrer"
+                                   aria-label="GitHub">
+
+                                    <i class="bi bi-github"></i>
+
+                                </a>
+
+                                <a href="https://www.linkedin.com/in/YOUR_USERNAME/"
+                                   target="_blank"
+                                   rel="noopener noreferrer"
+                                   aria-label="LinkedIn">
+
+                                    <i class="bi bi-linkedin"></i>
+
+                                </a>
+
+                                <a href="https://wa.me/91XXXXXXXXXX"
+                                   target="_blank"
+                                   rel="noopener noreferrer"
+                                   aria-label="WhatsApp">
+
+                                    <i class="bi bi-whatsapp"></i>
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-7 reveal">
+
+                        <div class="contact-card">
+
+                            <h3>
+                                Send Me a Message
+                            </h3>
+
+                            <form id="contactForm"
+                                  novalidate>
+
+                                <div class="row g-3">
+
+                                    <div class="col-md-6">
+
+                                        <label for="name"
+                                               class="form-label">
+
+                                            Your Name
+
+                                        </label>
+
+                                        <input type="text"
+                                               id="name"
+                                               name="name"
+                                               class="form-control"
+                                               placeholder="Enter your name"
+                                               autocomplete="name"
+                                               minlength="2"
+                                               maxlength="80"
+                                               required>
+
+                                    </div>
+
+                                    <div class="col-md-6">
+
+                                        <label for="email"
+                                               class="form-label">
+
+                                            Your Email
+
+                                        </label>
+
+                                        <input type="email"
+                                               id="email"
+                                               name="email"
+                                               class="form-control"
+                                               placeholder="Enter your email"
+                                               autocomplete="email"
+                                               maxlength="120"
+                                               required>
+
+                                    </div>
+
+                                    <div class="col-12">
+
+                                        <label for="subject"
+                                               class="form-label">
+
+                                            Subject
+
+                                        </label>
+
+                                        <input type="text"
+                                               id="subject"
+                                               name="subject"
+                                               class="form-control"
+                                               placeholder="Project subject"
+                                               minlength="3"
+                                               maxlength="150"
+                                               required>
+
+                                    </div>
+
+                                    <div class="col-12">
+
+                                        <label for="message"
+                                               class="form-label">
+
+                                            Message
+
+                                        </label>
+
+                                        <textarea id="message"
+                                                  name="message"
+                                                  class="form-control"
+                                                  placeholder="Write your message..."
+                                                  minlength="10"
+                                                  maxlength="2000"
+                                                  required></textarea>
+
+                                    </div>
+
+                                    <div class="col-12">
+
+                                        <button type="submit"
+                                                class="btn-primary-custom">
+
+                                            Send Message
+                                            <i class="bi bi-send"></i>
+
+                                        </button>
+
+                                    </div>
+
+                                </div>
+
+                                <div id="formStatus"
+                                     class="form-status"
+                                     role="status"
+                                     aria-live="polite">
+
+                                </div>
+
+                            </form>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer>
+
+        <div class="container">
+
+            <div class="row align-items-center">
+
+                <div class="col-md-6">
+
+                    <p>
+                        © <span id="currentYear"></span>
+                        Daulat Bairwa. All Rights Reserved.
+                    </p>
+
+                </div>
+
+                <div class="col-md-6 text-md-end">
+
+                    <a href="#home">
+                        Home
+                    </a>
+
+                    <a href="#about">
+                        About
+                    </a>
+
+                    <a href="#projects">
+                        Projects
+                    </a>
+
+                    <a href="#contact">
+                        Contact
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- =====================================================
+         BACK TO TOP
+    ====================================================== -->
+
+    <button type="button"
+            class="back-to-top"
+            id="backToTop"
+            aria-label="Back to top">
+
+        <i class="bi bi-arrow-up"></i>
+
+    </button>
+
+    <!-- =====================================================
+         BOOTSTRAP JS
+    ====================================================== -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
+
+    <script>
+        "use strict";
+
+        /* =====================================================
+           CONFIGURATION
+        ====================================================== */
+
+        const PORTFOLIO_EMAIL = "your-email@example.com";
+
+
+        /* =====================================================
+           CURRENT YEAR
+        ====================================================== */
+
+        document.getElementById("currentYear").textContent =
+            new Date().getFullYear();
+
+
+        /* =====================================================
+           NAVBAR SCROLL EFFECT
+        ====================================================== */
+
+        const navbar = document.getElementById("mainNavbar");
+
+        function handleNavbarScroll() {
+            if (window.scrollY > 40) {
+                navbar.classList.add("scrolled");
+            } else {
+                navbar.classList.remove("scrolled");
+            }
+        }
+
+        window.addEventListener(
+            "scroll",
+            handleNavbarScroll,
+            { passive: true }
+        );
+
+        handleNavbarScroll();
+
+
+        /* =====================================================
+           ACTIVE NAVIGATION
+        ====================================================== */
+
+        const sections = document.querySelectorAll("main section[id]");
+        const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+
+        function updateActiveNavigation() {
+
+            let currentSection = "";
+
+            sections.forEach(function (section) {
+
+                const sectionTop = section.offsetTop - 130;
+                const sectionBottom =
+                    sectionTop + section.offsetHeight;
+
+                if (
+                    window.scrollY >= sectionTop &&
+                    window.scrollY < sectionBottom
+                ) {
+                    currentSection = section.id;
+                }
+
+            });
+
+            navLinks.forEach(function (link) {
+
+                link.classList.remove("active");
+
+                if (
+                    link.getAttribute("href") ===
+                    "#" + currentSection
+                ) {
+                    link.classList.add("active");
+                }
+
+            });
+
+        }
+
+        window.addEventListener(
+            "scroll",
+            updateActiveNavigation,
+            { passive: true }
+        );
+
+        updateActiveNavigation();
+
+
+        /* =====================================================
+           MOBILE NAVBAR CLOSE
+        ====================================================== */
+
+        const navbarMenu =
+            document.getElementById("navbarMenu");
+
+        const mobileNavLinks =
+            document.querySelectorAll(".navbar-nav .nav-link");
+
+        mobileNavLinks.forEach(function (link) {
+
+            link.addEventListener("click", function () {
+
+                if (
+                    window.innerWidth < 992 &&
+                    navbarMenu.classList.contains("show")
+                ) {
+
+                    const collapse =
+                        bootstrap.Collapse.getOrCreateInstance(
+                            navbarMenu
+                        );
+
+                    collapse.hide();
+
+                }
+
+            });
+
+        });
+
+
+        /* =====================================================
+           REVEAL ANIMATION
+        ====================================================== */
+
+        const revealElements =
+            document.querySelectorAll(".reveal");
+
+        if ("IntersectionObserver" in window) {
+
+            const revealObserver =
+                new IntersectionObserver(
+                    function (entries) {
+
+                        entries.forEach(function (entry) {
+
+                            if (entry.isIntersecting) {
+
+                                entry.target.classList.add("show");
+
+                                revealObserver.unobserve(
+                                    entry.target
+                                );
+
+                            }
+
+                        });
+
+                    },
+                    {
+                        threshold: 0.12
+                    }
+                );
+
+            revealElements.forEach(function (element) {
+                revealObserver.observe(element);
+            });
+
+        } else {
+
+            revealElements.forEach(function (element) {
+                element.classList.add("show");
+            });
+
+        }
+
+
+        /* =====================================================
+           BACK TO TOP
+        ====================================================== */
+
+        const backToTop =
+            document.getElementById("backToTop");
+
+        function toggleBackToTop() {
+
+            if (window.scrollY > 500) {
+                backToTop.style.display = "flex";
+            } else {
+                backToTop.style.display = "none";
+            }
+
+        }
+
+        window.addEventListener(
+            "scroll",
+            toggleBackToTop,
+            { passive: true }
+        );
+
+        toggleBackToTop();
+
+        backToTop.addEventListener("click", function () {
+
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+
+        });
+
+
+        /* =====================================================
+           CONTACT FORM
+           STATIC HOSTING MAILTO FALLBACK
+        ====================================================== */
+
+        const contactForm =
+            document.getElementById("contactForm");
+
+        const formStatus =
+            document.getElementById("formStatus");
+
+        contactForm.addEventListener("submit", function (event) {
+
+            event.preventDefault();
+
+            if (!contactForm.checkValidity()) {
+
+                contactForm.classList.add("was-validated");
+
+                formStatus.style.display = "block";
+                formStatus.style.color = "#842029";
+                formStatus.style.background = "#f8d7da";
+                formStatus.textContent =
+                    "Please fill all fields correctly.";
+
+                return;
+
+            }
+
+            const name =
+                document.getElementById("name").value.trim();
+
+            const email =
+                document.getElementById("email").value.trim();
+
+            const subject =
+                document.getElementById("subject").value.trim();
+
+            const message =
+                document.getElementById("message").value.trim();
+
+            const mailSubject =
+                encodeURIComponent(
+                    subject + " - Portfolio Contact"
+                );
+
+            const mailBody =
+                encodeURIComponent(
+                    "Name: " + name + "\n" +
+                    "Email: " + email + "\n\n" +
+                    "Message:\n" + message
+                );
+
+            formStatus.style.display = "block";
+            formStatus.style.color = "#155724";
+            formStatus.style.background = "#d4edda";
+            formStatus.textContent =
+                "Your email application will open now.";
+
+            window.location.href =
+                "mailto:" +
+                PORTFOLIO_EMAIL +
+                "?subject=" +
+                mailSubject +
+                "&body=" +
+                mailBody;
+
+        });
+
+
+        /* =====================================================
+           EXTERNAL LINK SECURITY
+        ====================================================== */
+
+        document
+            .querySelectorAll('a[target="_blank"]')
+            .forEach(function (link) {
+
+                link.setAttribute(
+                    "rel",
+                    "noopener noreferrer"
+                );
+
+            });
+    </script>
+
+</body>
+</html>
